@@ -1,6 +1,44 @@
 Firmware
 ================
 
+MoteIV Tmote Sky or TelosB mote
+================
+
+First Setup a virtual enviroment with python 2 into the Killerbee main folder
+```
+virtualenv --python=$(which python2) ./venv
+sudo su
+source venv/bin/activate
+pip install -r firmware/requirements.txt
+```
+
+To use Killerbee intall in the virtualenviroment the stable killerbee version 2.7.1
+
+```
+pip install git+https://github.com/antonio-boiano/killerbee@release/2.7.1#egg=killerbee
+```
+OR
+```
+git checkout -b release/2.7.1
+python setup.py install
+```
+Remark to use the Comand Line tools, please go to tools folder and execute them as follow:
+```
+cd tools
+python zbid
+```
+
+This device can be loaded with firmware via USB. Attach the device, and then
+within killerbee/firmware, run:
+```
+$ ./flash_telosb.sh
+```
+
+These boards can be obtained via multiple distributors, however
+[this vendor](https://www.advanticsys.com/shop/mtmcm5000msp-p-14.html) has
+stated that their "clone" of the original hardware is compatible.
+We have not tested nor do we endorse any specific "clone".
+
 ApiMote
 ==================
 
