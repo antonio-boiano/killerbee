@@ -50,12 +50,24 @@ zbwireshark -c 0 -s 28 -i /dev/ttyACM0
 
 
 ## MoteIV Tmote Sky or TelosB mote
-First Setup a virtual enviroment with python 2
+First Setup a virtual enviroment with python 2 into the Killerbee main folder
 ```
-cd firmware
 virtualenv --python=$(which python2) ./venv
+sudo su
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r firmware/requirements.txt
+```
+
+To use Killerbee intall in the virtualenviroment the stable killerbee version 2.7.1
+
+```
+pip install git+https://github.com/antonio-boiano/killerbee@354c68b#egg=killerbee
+python setup.py install
+```
+Remark to use the Comand Line tools, please go to tools folder and execute them as follow:
+```
+cd tools
+python zbid
 ```
 
 This device can be loaded with firmware via USB. Attach the device, and then
