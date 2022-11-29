@@ -13,10 +13,13 @@ pip install -r firmware/requirements.txt
 ```
 
 To use Killerbee with telosb intall in the virtualenviroment the stable killerbee version 2.7.1
+
 Requirements:
 ```
 sudo apt install python2-dev
 ```
+Install:
+
 ```
 pip install git+https://github.com/antonio-boiano/killerbee@release/2.7.1#egg=killerbee
 ```
