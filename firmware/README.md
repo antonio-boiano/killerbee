@@ -12,8 +12,11 @@ source venv/bin/activate
 pip install -r firmware/requirements.txt
 ```
 
-To use Killerbee intall in the virtualenviroment the stable killerbee version 2.7.1
-
+To use Killerbee with telosb intall in the virtualenviroment the stable killerbee version 2.7.1
+Requirements:
+```
+sudo apt install python2-dev
+```
 ```
 pip install git+https://github.com/antonio-boiano/killerbee@release/2.7.1#egg=killerbee
 ```
