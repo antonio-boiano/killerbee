@@ -27,7 +27,7 @@ python zbid
 ```
 
 This device can be loaded with firmware via USB. Attach the device, and then
-within killerbee/firmware, run:
+within killerbee/firmware, run (on develop branch):
 ```
 $ ./flash_telosb.sh
 ```
